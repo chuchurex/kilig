@@ -14,8 +14,8 @@ export const siteConfig = defineType({
         defineField({name: 'name', title: 'Nombre', type: 'string'}),
         defineField({name: 'tagline', title: 'Tagline', type: 'string'}),
         defineField({name: 'description', title: 'Descripcion', type: 'text'}),
-        defineField({name: 'logo', title: 'Logo URL', type: 'url'}),
-        defineField({name: 'favicon', title: 'Favicon URL', type: 'url'}),
+        defineField({name: 'logo', title: 'Logo', type: 'cloudinary.asset'}),
+        defineField({name: 'favicon', title: 'Favicon', type: 'cloudinary.asset'}),
         defineField({name: 'language', title: 'Idioma', type: 'string'}),
         defineField({
           name: 'currency',
@@ -70,7 +70,7 @@ export const siteConfig = defineType({
             defineField({name: 'href', title: 'Href', type: 'string'}),
           ],
         }),
-        defineField({name: 'backgroundImage', title: 'Imagen de Fondo', type: 'url'}),
+        defineField({name: 'backgroundImage', title: 'Imagen de Fondo', type: 'cloudinary.asset'}),
       ],
     }),
     defineField({
@@ -106,7 +106,7 @@ export const siteConfig = defineType({
             defineArrayMember({
               type: 'object',
               fields: [
-                defineField({name: 'src', title: 'URL', type: 'url'}),
+                defineField({name: 'image', title: 'Imagen', type: 'cloudinary.asset'}),
                 defineField({name: 'alt', title: 'Alt', type: 'string'}),
               ],
             }),
@@ -146,7 +146,7 @@ export const siteConfig = defineType({
             defineArrayMember({
               type: 'object',
               fields: [
-                defineField({name: 'src', title: 'URL', type: 'url'}),
+                defineField({name: 'image', title: 'Imagen', type: 'cloudinary.asset'}),
                 defineField({name: 'alt', title: 'Alt', type: 'string'}),
               ],
             }),
@@ -201,7 +201,7 @@ export const siteConfig = defineType({
             }),
           ],
         }),
-        defineField({name: 'paymentMethodsImage', title: 'Imagen Medios de Pago', type: 'url'}),
+        defineField({name: 'paymentMethodsImage', title: 'Imagen Medios de Pago', type: 'cloudinary.asset'}),
       ],
     }),
     defineField({

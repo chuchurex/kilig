@@ -30,9 +30,9 @@ const Kalkux = {
       this.storeId = script?.dataset.kxStore || sanityProject;
       return {
         mode: 'sanity',
-        config: q('*[_type == "siteConfig"][0]'),
+        config: q('*[_type == "siteConfig"][0]{..., store{..., "logo": coalesce(logo.secure_url, logo), "favicon": coalesce(favicon.secure_url, favicon)}, hero{..., "backgroundImage": coalesce(backgroundImage.secure_url, backgroundImage)}, about{..., "images": images[]{"src": coalesce(image.secure_url, src), alt}}, gallery{..., "images": images[]{"src": coalesce(image.secure_url, src), alt}}, contact{..., "paymentMethodsImage": coalesce(paymentMethodsImage.secure_url, paymentMethodsImage)}}'),
         theme: q('*[_type == "siteTheme"][0]'),
-        products: q('{"variantTypes": *[_type == "variantType"] | order(variantId asc) {"id": variantId, label, "options": options[]{value, label}}, "products": *[_type == "product"] | order(sortOrder asc, name asc) {"id": productId, name, sku, category, description, image, badge, inStock, "attributes": attributes[]{label, value}, tags, "variants": variants[]->variantId, pricing, snipcart}}')
+        products: q('{"variantTypes": *[_type == "variantType"] | order(variantId asc) {"id": variantId, label, "options": options[]{value, label}}, "products": *[_type == "product"] | order(sortOrder asc, name asc) {"id": productId, name, sku, category, description, "image": coalesce(image.secure_url, image), badge, inStock, "attributes": attributes[]{label, value}, tags, "variants": variants[]->variantId, pricing, snipcart}}')
       };
     }
 

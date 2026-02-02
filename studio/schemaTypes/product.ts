@@ -31,7 +31,7 @@ export const product = defineType({
       },
     }),
     defineField({name: 'description', title: 'Descripcion', type: 'text'}),
-    defineField({name: 'image', title: 'Imagen URL', type: 'url'}),
+    defineField({name: 'image', title: 'Imagen', type: 'cloudinary.asset'}),
     defineField({name: 'badge', title: 'Badge', type: 'string'}),
     defineField({
       name: 'inStock',
@@ -161,7 +161,7 @@ export const product = defineType({
     {title: 'Nombre', name: 'name', by: [{field: 'name', direction: 'asc'}]},
   ],
   preview: {
-    select: {title: 'name', subtitle: 'category', media: 'image'},
+    select: {title: 'name', subtitle: 'category'},
     prepare({title, subtitle}) {
       return {
         title: title || 'Sin nombre',
