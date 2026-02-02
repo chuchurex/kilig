@@ -1,0 +1,120 @@
+{
+  "store": {
+    "id": "kilig",
+    "name": "Kilig Coffee",
+    "tagline": "Specialty Coffee Roasters",
+    "description": "Café de especialidad tostado artesanalmente en Santiago de Chile. Orígenes únicos de Colombia, Brasil, Perú, Honduras y México.",
+    "logo": "https://static.kiligcoffee.cl/img/logo.png",
+    "favicon": "https://static.kiligcoffee.cl/img/logo.png",
+    "language": "es",
+    "currency": {
+      "code": "CLP",
+      "locale": "es-CL",
+      "decimals": 0
+    },
+    "year": 2024
+  },
+
+  "snipcart": {
+    "apiKey": "YOUR_SNIPCART_API_KEY",
+    "modalStyle": "side"
+  },
+
+  "navigation": [
+    { "label": "Inicio", "href": "#inicio" },
+    { "label": "Café", "href": "#cafe" },
+    { "label": "Accesorios", "href": "#accesorios" },
+    { "label": "Conócenos", "href": "#nosotros" },
+    { "label": "Contacto", "href": "#contacto" }
+  ],
+
+  "hero": {
+    "tag": "Specialty Coffee Roasters",
+    "title": "Bienvenidos a Kilig",
+    "subtitle": "Si te gusta el café, llegaste al lugar indicado",
+    "cta": { "label": "Ver Cafés", "href": "#cafe" },
+    "backgroundImage": "https://static.kiligcoffee.cl/img/hero-granos.jpg"
+  },
+
+  "about": {
+    "enabled": true,
+    "sectionId": "nosotros",
+    "tag": "Nuestra Historia",
+    "title": "Cuidamos Cada Detalle",
+    "paragraphs": [
+      "En 2018 nacemos en un pequeño espacio del mercado local Persa Biobío, en Santiago de Chile, de la mano de dos personas soñadoras, amantes y profesionales del café.",
+      "Nos dedicamos a tostar, seleccionar, catar y servir cafés de especialidad de diversos orígenes del mundo para que puedan disfrutar en cualquier lugar, espacio o momento."
+    ],
+    "highlight": {
+      "title": "KILIG en idioma Tagalo (Filipino)",
+      "text": "Es la sensación de sentir mariposas en el estómago cuando te enamoras."
+    },
+    "closingText": "<strong>KILIG</strong> representa el amor y la dedicación por hacer que el café de especialidad sea extraordinario, cuidando cada técnica, parámetro y protocolo para obtener el mejor resultado.",
+    "images": [
+      { "src": "https://static.kiligcoffee.cl/img/about-evaluacion.jpg", "alt": "Evaluación de granos" },
+      { "src": "https://static.kiligcoffee.cl/img/about-juancho.jpg", "alt": "Juancho con granos" }
+    ]
+  },
+
+  "productSections": [
+    {
+      "id": "cafe",
+      "tag": "Nuestros Orígenes",
+      "title": "Cafés de Especialidad",
+      "subtitle": "Tostamos café todas las semanas, siempre fresco para ti",
+      "category": "cafe",
+      "gridStyle": "default"
+    },
+    {
+      "id": "accesorios",
+      "tag": "Equípate",
+      "title": "Cafeteras y Accesorios",
+      "subtitle": "Todo lo que necesitas para preparar el café perfecto",
+      "category": "accesorios",
+      "gridStyle": "compact"
+    }
+  ],
+
+  "gallery": {
+    "enabled": true,
+    "images": [
+      { "src": "https://static.kiligcoffee.cl/img/gallery-espresso.jpg", "alt": "Espresso" },
+      { "src": "https://static.kiligcoffee.cl/img/gallery-flatwhite.jpg", "alt": "Flat White" },
+      { "src": "https://static.kiligcoffee.cl/img/gallery-kalita.jpg", "alt": "Kalita" },
+      { "src": "https://static.kiligcoffee.cl/img/gallery-siphon.jpg", "alt": "Siphon" },
+      { "src": "https://static.kiligcoffee.cl/img/gallery-servicio.jpg", "alt": "Servicio" }
+    ]
+  },
+
+  "contact": {
+    "enabled": true,
+    "sectionId": "contacto",
+    "tag": "Encuéntranos",
+    "title": "Contáctanos",
+    "locations": [
+      { "name": "Ubicación 1", "address": "Placer 663, local 201\nSantiago de Chile" },
+      { "name": "Ubicación 2 - Persa Victor Manuel", "address": "Placer 657, Galpón 6, Local 138\nSantiago de Chile" }
+    ],
+    "whatsapp": { "number": "56958947268", "display": "+56 9 5894 7268" },
+    "email": "hola@kiligcoffee.cl",
+    "hours": [
+      { "days": "Lunes - Viernes", "time": "9:00 - 17:00" },
+      { "days": "Sábado - Domingo", "time": "9:00 - 18:00" }
+    ],
+    "paymentMethodsImage": "https://static.kiligcoffee.cl/img/mercadopago.png"
+  },
+
+  "social": {
+    "instagram": "https://instagram.com/kiligcoffee"
+  },
+
+  "fonts": {
+    "heading": {
+      "family": "'Playfair Display', Georgia, serif",
+      "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+    },
+    "body": {
+      "family": "'Inter', -apple-system, BlinkMacSystemFont, sans-serif"
+    }
+  }
+}

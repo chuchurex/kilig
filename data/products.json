@@ -1,0 +1,345 @@
+{
+  "variantTypes": [
+    {
+      "id": "weight",
+      "label": "Presentación",
+      "options": [
+        { "value": "250g", "label": "250g" },
+        { "value": "500g", "label": "500g" },
+        { "value": "1kg", "label": "1kg" },
+        { "value": "2kg", "label": "2kg" }
+      ]
+    },
+    {
+      "id": "grind",
+      "label": "En grano o molido para",
+      "options": [
+        { "value": "grano", "label": "En grano" },
+        { "value": "espresso", "label": "Espresso" },
+        { "value": "aeropress", "label": "Aeropress" },
+        { "value": "v60", "label": "V60" },
+        { "value": "chemex", "label": "Chemex" },
+        { "value": "kalita", "label": "Kalita" },
+        { "value": "cafetera-italiana", "label": "Cafetera Italiana" },
+        { "value": "cafetera-americana", "label": "Cafetera Americana o Goteo" },
+        { "value": "prensa-francesa", "label": "Prensa Francesa" }
+      ]
+    }
+  ],
+
+  "products": [
+    {
+      "id": "colombia-antioquia",
+      "name": "Colombia - Antioquia",
+      "sku": "Ca-Co-An/01",
+      "category": "cafe",
+      "description": "Café con acidez expresiva y brillante, sedoso en boca, cuerpo medio, post-gusto perdurable y placentero.",
+      "image": "https://static.kiligcoffee.cl/img/colombia-antioquia.jpg",
+      "badge": "Disponible",
+      "inStock": true,
+      "attributes": [
+        { "label": "Región", "value": "Antioquia" },
+        { "label": "Finca", "value": "La Gabriela" },
+        { "label": "Altura", "value": "1800m" },
+        { "label": "Proceso", "value": "Lavado" },
+        { "label": "Varietal", "value": "Caturra-Castillo" }
+      ],
+      "tags": ["Naranja", "Chocolate", "Caramelo"],
+      "variants": ["weight", "grind"],
+      "pricing": {
+        "type": "by-variant",
+        "variantKey": "weight",
+        "prices": {
+          "250g": 11900,
+          "500g": 21900,
+          "1kg": 39900,
+          "2kg": 54900
+        }
+      },
+      "snipcart": {
+        "customFields": [
+          { "name": "Presentación", "variantId": "weight" },
+          { "name": "Molido", "variantId": "grind" }
+        ]
+      }
+    },
+    {
+      "id": "brasil-carmo",
+      "name": "Brasil - Carmo de Minas",
+      "sku": "Ca-Br-CM/01",
+      "category": "cafe",
+      "description": "Café dulce y equilibrado, con notas de chocolate y nueces, cuerpo medio-alto y acidez suave.",
+      "image": "https://static.kiligcoffee.cl/img/brasil-carmo.jpg",
+      "badge": "Disponible",
+      "inStock": true,
+      "attributes": [
+        { "label": "Región", "value": "Minas Gerais" },
+        { "label": "Finca", "value": "Carmo de Minas" },
+        { "label": "Altura", "value": "1200m" },
+        { "label": "Proceso", "value": "Natural" },
+        { "label": "Varietal", "value": "Yellow Bourbon" }
+      ],
+      "tags": ["Nuez", "Chocolate", "Caramelo"],
+      "variants": ["weight", "grind"],
+      "pricing": {
+        "type": "by-variant",
+        "variantKey": "weight",
+        "prices": {
+          "250g": 11900,
+          "500g": 21900,
+          "1kg": 39900,
+          "2kg": 54900
+        }
+      },
+      "snipcart": {
+        "customFields": [
+          { "name": "Presentación", "variantId": "weight" },
+          { "name": "Molido", "variantId": "grind" }
+        ]
+      }
+    },
+    {
+      "id": "honduras-copan",
+      "name": "Honduras - Copán",
+      "sku": "Ca-Ho-Co/01",
+      "category": "cafe",
+      "description": "Café balanceado con notas dulces, acidez brillante y final limpio.",
+      "image": "https://static.kiligcoffee.cl/img/honduras-copan.jpg",
+      "badge": "Disponible",
+      "inStock": true,
+      "attributes": [
+        { "label": "Región", "value": "Copán" },
+        { "label": "Finca", "value": "Pequeños Productores" },
+        { "label": "Altura", "value": "1500m" },
+        { "label": "Proceso", "value": "Lavado" },
+        { "label": "Varietal", "value": "Catuai-Pacas" }
+      ],
+      "tags": ["Miel", "Cítrico", "Almendra"],
+      "variants": ["weight", "grind"],
+      "pricing": {
+        "type": "by-variant",
+        "variantKey": "weight",
+        "prices": {
+          "250g": 11900,
+          "500g": 21900,
+          "1kg": 39900,
+          "2kg": 54900
+        }
+      },
+      "snipcart": {
+        "customFields": [
+          { "name": "Presentación", "variantId": "weight" },
+          { "name": "Molido", "variantId": "grind" }
+        ]
+      }
+    },
+    {
+      "id": "peru-san-ignacio",
+      "name": "Perú - San Ignacio",
+      "sku": "CafPe01",
+      "category": "cafe",
+      "description": "Café de acidez moderada y jugosa, dulzor medio-alto, cuerpo medio con un postgusto un poco mas sutil y atenuado, fragancia muy predominante y expresiva.",
+      "image": "https://static.kiligcoffee.cl/img/peru-san-ignacio.jpg",
+      "badge": "Disponible",
+      "inStock": true,
+      "attributes": [
+        { "label": "Región", "value": "San Ignacio" },
+        { "label": "Finca", "value": "Churupampa" },
+        { "label": "Altura", "value": "1700m" },
+        { "label": "Proceso", "value": "Lavado" },
+        { "label": "Varietal", "value": "Caturra-Catuai" }
+      ],
+      "tags": ["Lima", "Caña de Azúcar", "Ciruela Pasa"],
+      "variants": ["weight", "grind"],
+      "pricing": {
+        "type": "by-variant",
+        "variantKey": "weight",
+        "prices": {
+          "250g": 11900,
+          "500g": 21900,
+          "1kg": 39900,
+          "2kg": 54900
+        }
+      },
+      "snipcart": {
+        "customFields": [
+          { "name": "Presentación", "variantId": "weight" },
+          { "name": "Molido", "variantId": "grind" }
+        ]
+      }
+    },
+    {
+      "id": "mexico-descafeinado",
+      "name": "México - Puebla Descafeinado",
+      "sku": "CafeMexdecaf-01",
+      "category": "cafe",
+      "description": "Café descafeinado con proceso Mountain Water, manteniendo sabores complejos y dulces.",
+      "image": "https://static.kiligcoffee.cl/img/mexico-descafeinado.jpg",
+      "badge": "Descafeinado",
+      "inStock": true,
+      "attributes": [
+        { "label": "Región", "value": "Puebla" },
+        { "label": "Finca", "value": "Pequeños Productores Locales" },
+        { "label": "Altura", "value": "900-1400m" },
+        { "label": "Proceso", "value": "Mountain Water" },
+        { "label": "Varietal", "value": "Garnica-Bourbon" }
+      ],
+      "tags": ["Chocolate", "Piel de Naranja", "Panela"],
+      "variants": ["weight", "grind"],
+      "pricing": {
+        "type": "by-variant",
+        "variantKey": "weight",
+        "prices": {
+          "250g": 13900,
+          "500g": 25900,
+          "1kg": 47900,
+          "2kg": 65000
+        }
+      },
+      "snipcart": {
+        "customFields": [
+          { "name": "Presentación", "variantId": "weight" },
+          { "name": "Molido", "variantId": "grind" }
+        ]
+      }
+    },
+    {
+      "id": "colombia-chiroso",
+      "name": "Colombia - Caturra Chiroso",
+      "category": "cafe",
+      "description": "Edición Especial",
+      "image": "https://static.kiligcoffee.cl/img/colombia-chiroso.jpg",
+      "badge": "Agotado",
+      "inStock": false,
+      "attributes": [
+        { "label": "Info", "value": "Próximamente" }
+      ],
+      "tags": ["Edición Especial"],
+      "variants": ["weight", "grind"],
+      "pricing": {
+        "type": "by-variant",
+        "variantKey": "weight",
+        "prices": {
+          "250g": 0,
+          "500g": 0,
+          "1kg": 0,
+          "2kg": 0
+        }
+      },
+      "snipcart": {
+        "customFields": [
+          { "name": "Presentación", "variantId": "weight" },
+          { "name": "Molido", "variantId": "grind" }
+        ]
+      }
+    },
+    {
+      "id": "aeropress-blue",
+      "name": "Aeropress Clear Blue",
+      "category": "accesorios",
+      "image": "https://static.kiligcoffee.cl/img/aeropress-blue.jpg",
+      "inStock": true,
+      "variants": [],
+      "pricing": { "type": "fixed", "price": 59900 }
+    },
+    {
+      "id": "aeropress-red",
+      "name": "Aeropress Clear Red",
+      "category": "accesorios",
+      "image": "https://static.kiligcoffee.cl/img/aeropress-red.webp",
+      "inStock": true,
+      "variants": [],
+      "pricing": { "type": "fixed", "price": 59900 }
+    },
+    {
+      "id": "aeropress-go",
+      "name": "Aeropress Go",
+      "category": "accesorios",
+      "image": "https://static.kiligcoffee.cl/img/aeropress-go.webp",
+      "inStock": true,
+      "variants": [],
+      "pricing": { "type": "fixed", "price": 54900 }
+    },
+    {
+      "id": "kit-v60",
+      "name": "Kit Cafetera Hario V60 02",
+      "category": "accesorios",
+      "image": "https://static.kiligcoffee.cl/img/kit-v60.jpg",
+      "inStock": true,
+      "variants": [],
+      "pricing": { "type": "fixed", "price": 27500 }
+    },
+    {
+      "id": "prensa-350",
+      "name": "Prensa Francesa 350ml",
+      "category": "accesorios",
+      "image": "https://static.kiligcoffee.cl/img/prensa-francesa.jpg",
+      "inStock": true,
+      "variants": [],
+      "pricing": { "type": "fixed", "price": 9000 }
+    },
+    {
+      "id": "prensa-600",
+      "name": "Prensa Francesa 600ml",
+      "category": "accesorios",
+      "image": "https://static.kiligcoffee.cl/img/prensa-francesa.jpg",
+      "inStock": true,
+      "variants": [],
+      "pricing": { "type": "fixed", "price": 12000 }
+    },
+    {
+      "id": "filtro-aeropress",
+      "name": "Filtro Aeropress Classic",
+      "category": "accesorios",
+      "image": "https://static.kiligcoffee.cl/img/filtro-aeropress.webp",
+      "inStock": true,
+      "variants": [],
+      "pricing": { "type": "fixed", "price": 9900 }
+    },
+    {
+      "id": "filtro-v60-02",
+      "name": "Filtro V60 Hario 02",
+      "category": "accesorios",
+      "image": "https://static.kiligcoffee.cl/img/filtro-v60-02.webp",
+      "inStock": true,
+      "variants": [],
+      "pricing": { "type": "fixed", "price": 8000 }
+    },
+    {
+      "id": "filtro-v60-01",
+      "name": "Filtro V60 Hario 01",
+      "category": "accesorios",
+      "image": "https://static.kiligcoffee.cl/img/filtro-v60-01.jpg",
+      "inStock": true,
+      "variants": [],
+      "pricing": { "type": "fixed", "price": 6000 }
+    },
+    {
+      "id": "filtro-kalita",
+      "name": "Filtro Kalita Wave 185",
+      "category": "accesorios",
+      "image": "https://static.kiligcoffee.cl/img/filtro-kalita.jpg",
+      "inStock": true,
+      "variants": [],
+      "pricing": { "type": "fixed", "price": 11000 }
+    },
+    {
+      "id": "filtro-melitta",
+      "name": "Filtro Melitta 02",
+      "category": "accesorios",
+      "image": "https://static.kiligcoffee.cl/img/filtro-melitta.webp",
+      "inStock": true,
+      "variants": [],
+      "pricing": { "type": "fixed", "price": 3900 }
+    },
+    {
+      "id": "prensa-800",
+      "name": "Prensa Francesa 800ml",
+      "category": "accesorios",
+      "image": "https://static.kiligcoffee.cl/img/prensa-francesa-800.webp",
+      "inStock": true,
+      "variants": [],
+      "pricing": { "type": "fixed", "price": 18000 }
+    }
+  ]
+}

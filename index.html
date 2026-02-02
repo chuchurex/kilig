@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cargando...</title>
+  <meta name="description" content="">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.snipcart.com">
+  <link rel="preconnect" href="https://08b72xoc.apicdn.sanity.io">
+
+  <!-- Fonts (injected by Kalkux engine) -->
+  <link id="kx-fonts" rel="stylesheet" href="">
+
+  <!-- Snipcart -->
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Kalkux: all content rendered dynamically from data/*.json -->
+  <header class="header" id="kx-header"></header>
+  <section class="hero" id="inicio"></section>
+  <section class="about" id="kx-about"></section>
+  <div id="kx-product-sections"></div>
+  <section class="gallery" id="kx-gallery"></section>
+  <section class="contact" id="kx-contact"></section>
+  <footer class="footer" id="kx-footer"></footer>
+
+  <!-- Product Modal -->
+  <div class="modal" id="product-modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="Kalkux.closeProductModal()" aria-label="Cerrar">&times;</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Snipcart (API key injected by engine) -->
+  <div hidden id="snipcart" data-api-key="" data-config-modal-style="side"></div>
+  <script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js" async></script>
+
+  <!-- Kalkux Engine -->
+  <!-- Local mode: reads from data/*.json (remove data-kx-sanity-* to use) -->
+  <!-- API mode: add data-kx-api="https://api.kalkux.com/v1" data-kx-store="kilig" -->
+  <!-- Sanity mode (active): fetches from Sanity CDN via GROQ -->
+  <script src="js/kalkux.js" data-kx-store="kilig" data-kx-sanity-project="08b72xoc" data-kx-sanity-dataset="production"></script>
+</body>
+</html>
